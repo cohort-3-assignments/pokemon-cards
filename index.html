@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Cards</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <img src="pokemon.webp" alt="Pokemon Logo" class="header-image">
+        <h1>Pokemon Cards Collection</h1>
+    </header>
+
+ 
+    <div class="form-container">
+        <label for="noOfCards">Number of Cards:</label>
+        <input 
+            type="number" 
+            name="noOfCards" 
+            id="noOfCards" 
+            placeholder="Enter number" 
+            required 
+        />
+
+        <label for="category">Category:</label>
+        <select 
+            name="category" 
+            id="category" 
+            required>
+            <!-- Dynamic -->
+        </select>
+
+        <button id="submit">Submit</button>
+    </div>
+
+    <div id="cards" class="cards-container"></div>
+</body>
+</html>
